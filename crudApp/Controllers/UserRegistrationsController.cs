@@ -47,7 +47,7 @@ namespace crudApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "iUserId,sFirstName,sLastName,sGender,iAge")] UserRegistration userRegistration)
+        public ActionResult Create([Bind(Include = "iUserId,sFirstName,sLastName,sGender,iAge,sEmail,sPhone,sAddress")] UserRegistration userRegistration)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace crudApp.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "iUserId,sFirstName,sLastName,sGender,iAge")] UserRegistration userRegistration)
+        public ActionResult Edit([Bind(Include = "iUserId,sFirstName,sLastName,sGender,iAge,sEmail,sPhone,sAddress")] UserRegistration userRegistration)
         {
             if (ModelState.IsValid)
             {

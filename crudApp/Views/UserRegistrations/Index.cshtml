@@ -20,7 +20,18 @@
         <th>
             @Html.DisplayNameFor(model => model.sGender)
         </th>
-        
+        <th>
+            @Html.DisplayNameFor(model => model.iAge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sAddress)
+        </th>
         <th></th>
     </tr>
 
@@ -34,6 +45,18 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.sGender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iAge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sAddress)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.iUserId }) |

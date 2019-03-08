@@ -13,7 +13,7 @@ namespace crudApp.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201903082056376_Registration"; }
+            get { return "201903082144325_Registration"; }
         }
         
         string IMigrationMetadata.Source
