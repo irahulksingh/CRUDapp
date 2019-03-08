@@ -1,0 +1,46 @@
+﻿@model IEnumerable<crudApp.Models.UserRegistration>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.sFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sGender)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.sFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sGender)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.iUserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.iUserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.iUserId })
+        </td>
+    </tr>
+}
+
+</table>
