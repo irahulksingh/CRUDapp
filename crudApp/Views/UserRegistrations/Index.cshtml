@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>User Database</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create new user", "Create",new { Model= Model }, new { @class = "btn btn-info", @style = "color:white" })
 </p>
 <table class="table">
     <tr>
@@ -59,9 +59,9 @@
             @Html.DisplayFor(modelItem => item.sAddress)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.iUserId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.iUserId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.iUserId })
+            @Html.ActionLink("Read / View", "Details", new { id = item.iUserId}, new { @class = "btn btn-primary", @style = "color:white" }) 
+            @Html.ActionLink("Update", "Edit", new { id = item.iUserId }, new { @class = "btn btn-success", @style = "color:white" }) 
+            @Html.ActionLink("Delete", "Delete", new { id = item.iUserId }, new { @class = "btn btn-danger", @style = "color:white" })
         </td>
     </tr>
 }
