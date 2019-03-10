@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: Raleway;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,9 +17,44 @@
     white-space: normal;
 }
 
+.img-rounded {
+    border-radius: 5%;
+}
+
+h1 {
+    font-family: Poppins;
+}
+
+h2 {
+    font-family: Poppins;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/ppl.jpg");
+    /* Set a specific height */
+    height: 300px;
+    margin: 0;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
 }
